@@ -29,7 +29,7 @@ def datagenerate(records, headers):
     with open("sales.csv", 'wt') as csvFile:
         writer = csv.DictWriter(csvFile, fieldnames=headers)
         writer.writeheader()
-        for i in range(records):
+        for _ in range(records):
             accounts = random.choice(account)
             names = random.choice(name)
             orders = random.choice(order)
