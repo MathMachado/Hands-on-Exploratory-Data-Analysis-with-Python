@@ -220,7 +220,7 @@ print(rem)
 x = np.array([10, 20, 30, 40, 50])
 
 # Select items at index 0 and 1
-print(x[0:2])
+print(x[:2])
 
 # Select item at row 0 and 1 and column 1 from 2D array
 y = np.array([[ 1,  2,  3,  4], [ 9, 10, 11 ,12]])
@@ -254,7 +254,7 @@ print(series)
 dict_df = [{'A': 'Apple', 'B': 'Ball'},{'A': 'Aeroplane', 'B': 'Bat', 'C': 'Cat'}]
 dict_df = pd.DataFrame(dict_df)
 print(dict_df)
-  
+
 # Creating dataframe from Series
 series_df = pd.DataFrame({
     'A': range(1, 5),
@@ -302,13 +302,12 @@ df.describe()
 # Selects a row
 df.iloc[10] 
 
-# Selects 10 rows             
-df.iloc[0:10]
+# Selects 10 rows
+df.iloc[:10]
 
 # Selects a range of rows           
 df.iloc[10:15]            
 
- # Selects the last 2 rows
 df.iloc[-2:]  
 
 # Selects every other row in columns 3-5
